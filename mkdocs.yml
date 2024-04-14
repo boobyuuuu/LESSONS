@@ -95,11 +95,15 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tilde
 
+extra_javascript:
+  # 渲染公式用的
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js
 # Page-Tree
 nav:
   - Index: index.md
   - 一、Solid State Physics:
-    - 1.1 mkdocs 的安装与使用: 1/1_1.md
+    - 1.1 第一章：晶体的结构及其对称性: 1/1_1.md
   - 二、热力学与统计物理:
     - 2.1 服务器基本信息: 2/2_1.md
   - 三、近代物理实验:
