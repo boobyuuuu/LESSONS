@@ -103,9 +103,11 @@ extra_javascript:
 nav:
   - Index: index.md
   - 一、Solid State Physics:
+    - 序言: SSP/index.md
     - 第一章：晶体的结构及其对称性: SSP/1.md
     - 第二章：晶体的结合: SSP/2.md
     - 第三章：晶格动力学和晶体的热学性质: SSP/3.md
+    - 物理概念: SSP/物理概念.md
   - 二、热力学与统计物理:
     - 2.1 服务器基本信息: 2/2_1.md
   - 三、近代物理实验:
