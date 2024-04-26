@@ -104,7 +104,8 @@ nav:
   - Index: index.md
   - 一、Solid State Physics:
     - 序言: SSP/index.md
-    - 第一章：晶体的结构及其对称性: SSP/1.md
+    - 第一章(1)：晶体的结构: SSP/1_1.md
+    - 第一章(2)：晶体的对称性: SSP/1_2.md
     - 第二章：晶体的结合: SSP/2.md
     - 第三章：晶格动力学和晶体的热学性质: SSP/3.md
     - 物理概念: SSP/物理概念.md
