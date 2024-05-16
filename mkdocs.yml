@@ -102,7 +102,7 @@ extra_javascript:
 # Page-Tree
 nav:
   - Index: index.md
-  - 一、Solid State Physics:
+  - Solid State Physics:
     - 序言: SSP/index.md
     - 第一章(1)：晶体的结构: SSP/1_1.md
     - 第一章(2)：晶体的对称性: SSP/1_2.md
@@ -110,7 +110,10 @@ nav:
     - 第三章：晶格动力学和晶体的热学性质: SSP/3.md
     - 物理概念: SSP/物理概念.md
     - 考试: SSP/0.md
-  - 二、热力学与统计物理:
-    - 2.1 服务器基本信息: 2/2_1.md
-  - 三、近代物理实验:
-    - 3.1 虚拟环境预备知识: 3/3_1.md
+  - Thermodynamics and Statistical Physics:
+    - 序言: TSP/index.md
+    - 第一章：热力学的基本规律: TSP/1.md
+    - 第二章：均匀物质的热力学性质: TSP/2.md
+    - 第三章：单元系的相变: TSP/3.md
+    - 第四章：多元系的复相平衡和化学平衡 热力学第三定律: TSP/4.md
+  - 三、近代物理实验
