@@ -108,6 +108,8 @@ nav:
     - 第一章(2)：晶体的对称性: SSP/1_2.md
     - 第二章：晶体的结合: SSP/2.md
     - 第三章：晶格动力学和晶体的热学性质: SSP/3.md
+    - 第四章(1)：能带论-金属: SSP/4.md
+    - 第四章(2)：能带论-半导体: SSP/5.md
     - 物理概念: SSP/物理概念.md
     - 考试: SSP/0.md
   - Thermodynamics and Statistical Physics:
@@ -116,4 +118,10 @@ nav:
     - 第二章：均匀物质的热力学性质: TSP/2.md
     - 第三章：单元系的相变: TSP/3.md
     - 第四章：多元系的复相平衡和化学平衡 热力学第三定律: TSP/4.md
-  - 三、近代物理实验
+  - Modern Physics Experiments:
+    - 𝛾 辐射能量: MPE/𝛾 辐射能量.md
+  - Valorant:
+    - 日落之城: Valorant/Sunset.md
+    - 森寒冬港: Valorant/Icebox.md
+    - 亚海悬城: Valorant/Icebox.md
+
