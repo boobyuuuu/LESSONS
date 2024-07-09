@@ -117,7 +117,10 @@ nav:
     - 第一章：热力学的基本规律: TSP/1.md
     - 第二章：均匀物质的热力学性质: TSP/2.md
     - 第三章：单元系的相变: TSP/3.md
-    - 第四章：多元系的复相平衡和化学平衡 热力学第三定律: TSP/4.md
+    - 第六章 近独立粒子的最概然分布: TSP/6.md
+    - 第七章 玻尔兹曼统计: TSP/7.md
+    - 第八章 玻色统计和费米统计（简并气体）: TSP/8.md
+
   - Modern Physics Experiments:
     - 𝛾 辐射能量: MPE/辐射能量.md
     - 冉绍尔效应: MPE/冉绍尔效应.md
@@ -125,6 +128,10 @@ nav:
     - 霍尔效应: MPE/霍尔效应.md
     - 纳米颗粒: MPE/纳米颗粒.md
     - 铁电测量: MPE/铁电测量.md
+  - DXW:
+    - 服务器操作笔记: DXW/server.md
+    - Llama Factory llama3微调: DXW/LlamaFactory.md
+    - 单专家模型: DXW/single.md
   - Valorant:
     - 日落之城: Valorant/Sunset.md
     - 森寒冬港: Valorant/Icebox.md
