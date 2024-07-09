@@ -50,7 +50,7 @@ huggingface-cli download --resume-download shenzhi-wang/Llama3-8B-Chinese-Chat -
 ### 📂 2.2 准备训练数据
 
 训练数据：
-- [fintech.json](https://github.com/echonoshy/cgft-llm/blob/master/llama-factory/data/fintech.json)
+- [diy.json](https://github.com/boobyuuuu/LESSONS/blob/main/docs/DXW/diy.json)
 - [identity.json](https://github.com/echonoshy/cgft-llm/blob/master/llama-factory/data/identity.json)
 
 将训练数据放在 LLaMA-Factory/data/fintech.json  
