@@ -51,10 +51,10 @@ huggingface-cli download --resume-download shenzhi-wang/Llama3-8B-Chinese-Chat -
 
 训练数据：
 - [diy.json](https://github.com/boobyuuuu/LESSONS/blob/main/docs/DXW/diy.json)
-- [identity.json](https://github.com/echonoshy/cgft-llm/blob/master/llama-factory/data/identity.json)
+- [identity.json](https://github.com/boobyuuuu/LESSONS/blob/main/docs/DXW/identity.json)
 
-将训练数据放在 LLaMA-Factory/data/fintech.json  
-并且修改数据注册文件：LLaMA-Factory/data/dataset_info.json
+将训练数据放在 LLaMA-Factory/data/diy.json   LLaMA-Factory/data/identity.json 
+并且修改数据注册文件：LLaMA-Factory/data/dataset_info.json。修改为如下：
 
 ```json
 "fintech": {
