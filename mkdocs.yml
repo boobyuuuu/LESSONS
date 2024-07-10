@@ -132,8 +132,9 @@ nav:
     - 服务器操作笔记: DXW/server.md
     - Llama Factory llama3微调: DXW/LlamaFactory.md
     - 单专家模型: DXW/single.md
+    - 传统GNN方法: DXW/GNN.md
   - Valorant:
     - 日落之城: Valorant/Sunset.md
     - 森寒冬港: Valorant/Icebox.md
-    - 亚海悬城: Valorant/Icebox.md
+    - 亚海悬城: Valorant/Ascent.md
 

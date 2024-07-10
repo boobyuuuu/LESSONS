@@ -2,6 +2,13 @@
 
 ## 开始
 
+`free -h` : 查看磁盘使用情况  
+`df -h`: 查看系统盘、硬盘容量  
+`nvidia-smi`  
+
+`python -c "import torch; print(torch.__version__)"` : 检查pytorch版本  
+`nvcc --version` : 检查cuda版本
+
 ### 0 一般操作
 
 - ssh连接服务器
@@ -9,6 +16,10 @@
 ```
 ssh -L 8889:localhost:8889 root@111.61.30.143
 ```
+
+使用vscode进行服务器编辑：[https://blog.csdn.net/kiong_/article/details/135877723](https://blog.csdn.net/kiong_/article/details/135877723)
+
+vscode连接服务器使用ipynb文件的小问题：[vscode中 ssh连接服务器后 无法为jupyter文件选择内核kernel](https://blog.csdn.net/jyk19991222/article/details/131486776)
 
 - 配置查看
 
