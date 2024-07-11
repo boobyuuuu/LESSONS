@@ -2,12 +2,14 @@
 
 ## 开始
 
-`free -h` : 查看磁盘使用情况  
-`df -h`: 查看系统盘、硬盘容量  
-`nvidia-smi`  
+!!!note
+    `free -h` : 查看磁盘使用情况  
+    `df -h`: 查看系统盘、硬盘容量  
+    `nvidia-smi`  
 
-`python -c "import torch; print(torch.__version__)"` : 检查pytorch版本  
-`nvcc --version` : 检查cuda版本
+    `python --version` ：检查python版本  
+    `python -c "import torch; print(torch.__version__)"` : 检查pytorch版本  
+    `nvcc --version` : 检查cuda版本
 
 ### 0 一般操作
 
