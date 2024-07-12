@@ -102,6 +102,9 @@ extra_javascript:
 # Page-Tree
 nav:
   - Index: index.md
+  - Classical Physics:
+    - Dynamics: classical physics/Dynamics.md
+    - 物理模型: classical physics/物理模型.md
   - Solid State Physics:
     - 序言: SSP/index.md
     - 第一章(1)：晶体的结构: SSP/1_1.md
