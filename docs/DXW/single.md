@@ -1,6 +1,24 @@
-# 单专家模型_第一划分_10结点训练集_20结点测试小实验
+# 单专家模型
 
-## DataGeneration
+## 单专家模型——Llama3预测
+
+1. 基座模型：使用英文基座模型。**需要将微调数据集改为英文。**
+
+2. 数据问题：  
+    数据重叠的问题  
+    阅读以太坊钓鱼节点检测论文  
+    **最原始数据重新处理**
+
+3. 方法：微调为主，提示工程为辅
+
+4. 可能会用到的突破窗口长度：`Long context window` 技巧  
+    显存问题（不用重新训练）  
+    正确率问题
+
+5. GCN 问题： 寻找PYG现有的案例，尽量迁移
+
+## 单专家模型——Gpt4预测——第一划分_10结点训练集_20结点测试小实验
+### DataGeneration
 
 可优化点：
 
@@ -200,7 +218,7 @@
 打分：0
 ```
 
-## SingleExpertModle
+### SingleExpertModle
 
 - 可优化点：
 
@@ -289,7 +307,7 @@ def SingleExpertModle(new_node_detail):
     messages_A.append({"role": "assistant", "content": response_A})
 ```
 
-## DataProcessing
+### DataProcessing
 
 - 可优化：
 
