@@ -122,6 +122,10 @@ nav:
     - 第十四章 曲线积分 曲面积分 场论: SF/14.md
     - 第十五章 含参变量积分: SF/15.md
     - 第十六章 Fourier级数: SF/16.md
+  - Quantumn Mechanics:
+    - 3 薛定谔方程 一维定态问题: quantumn/3.md
+    - 4 数学工具 理论基础: quantumn/4.md
+    - Summary: quantumn/summary.md
   - Solid State Physics:
     - 序言: SSP/index.md
     - 第一章(1)：晶体的结构: SSP/1_1.md
@@ -132,10 +136,6 @@ nav:
     - 第四章(2)：能带论-半导体: SSP/5.md
     - 物理概念: SSP/物理概念.md
     - 考试: SSP/0.md
-  - Quantumn Mechanics:
-    - 3 薛定谔方程 一维定态问题: quantumn/3.md
-    - 4 数学工具 理论基础: quantumn/4.md
-    - Summary: quantumn/summary.md
   - Thermodynamics and Statistical Physics:
     - 序言: TSP/index.md
     - 第一章：热力学的基本规律: TSP/1.md
