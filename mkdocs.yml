@@ -106,6 +106,8 @@ extra_javascript:
   # 渲染公式用的
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js
+  - https://cdn.tonycrane.cc/utils/katex.min.js
+  - js/katex.js
 
 extra_css:
   - stylesheets/extra.css # 字体
