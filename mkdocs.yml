@@ -99,6 +99,11 @@ extra_javascript:
   # 渲染公式用的
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js
+
+# 字体
+extra_css:
+  - stylesheets/extra.css
+
 # Page-Tree
 nav:
   - Index: index.md
