@@ -30,9 +30,9 @@ theme:
       toggle:
         icon: material/toggle-switch-off
         name: Switch to system preference
-  font:
-    text: Roboto
-    code: Roboto Mono
+  # font:
+  #   text: Roboto
+  #   code: Roboto Mono
   favicon: assets/favicon.png
   icon:
     logo: logo
@@ -103,6 +103,12 @@ extra_javascript:
 # 字体
 extra_css:
   - stylesheets/extra.css
+  # - stylesheets/custom.css
+
+extra:
+  fonts:
+    - name: CustomFont
+      url: fonts/HGFS_CNKI.TTF
 
 # Page-Tree
 nav:
