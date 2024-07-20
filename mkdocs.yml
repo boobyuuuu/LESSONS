@@ -4,6 +4,9 @@ site_description: >-
 
 theme:
   name: material
+  logo: assets/favicon.png
+  icon: 
+    logo: material/notebook-outline
   custom_dir: material/overrides
   features:
     - announce.dismiss
@@ -23,19 +26,23 @@ theme:
     - search.suggest
     - toc.follow
   palette:
+    # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: black
       accent: indigo
       toggle:
         icon: material/toggle-switch-off
-        name: Switch to system preference
+        name: Switch to light mode
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: sunset glow
+      toggle:
+        icon: material/weather-night # 图标(可改)
+        name: Switch to dark mode
   # font:
   #   text: Roboto
   #   code: Roboto Mono
-  favicon: assets/favicon.png
-  icon:
-    logo: logo
 
 # Plugins
 plugins:
@@ -100,13 +107,19 @@ extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js
 
-# 字体
 extra_css:
-  - stylesheets/extra.css
-  # - stylesheets/custom.css
+  - stylesheets/extra.css # 字体
+  - stylesheets/custom.css
+  - css/tasklist.css
+  - css/custom.css
+  - css/card.css
+  - css/flink.css
+  - css/changelog_extra.css
 
 extra:
   fonts:
+    - name: simfang
+      url: fonts/simfang.ttf
     - name: CustomFont
       url: fonts/HGFS_CNKI.TTF
 
