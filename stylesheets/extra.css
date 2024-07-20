@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../fonts/HGFS_CNKI.TTF') format('truetype');
+}
+
+body {
+    font-family: 'CustomFont', sans-serif; /* 使用自定义字体 CustomFont，如果无法加载则使用系统默认的 sans-serif 字体 */
+    font-size: 12px; /* 设置字体大小为 16 像素 */
+}
