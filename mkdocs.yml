@@ -149,9 +149,15 @@ nav:
     - 第十五章 含参变量积分: SF/15.md
     - 第十六章 Fourier级数: SF/16.md
   - Quantumn Mechanics:
+    - 1 波粒二象性 量子力学的基石: quantumn/1.md
+    - 2 波函数: quantumn/2.md
     - 3 薛定谔方程 一维定态问题: quantumn/3.md
-    - 4 数学工具 理论基础: quantumn/4.md
-    - 6 三大基本应用: quantumn/6.md
+    - 4 数学工具 形式理论: quantumn/4.md
+    - 5 五大基本应用: quantumn/5.md
+    - 6 微扰: quantumn/6.md
+    - 7 变分法: quantumn/7.md
+    - 8 散射: quantumn/8.md
+    - 9 绝热近似: quantumn/9.md
     - Summary: quantumn/summary.md
   - Solid State Physics:
     - 序言: SSP/index.md
@@ -159,8 +165,9 @@ nav:
     - 第一章(2)：晶体的对称性: SSP/1_2.md
     - 第二章：晶体的结合: SSP/2.md
     - 第三章：晶格动力学和晶体的热学性质: SSP/3.md
-    - 第四章(1)：能带论-金属: SSP/4.md
-    - 第四章(2)：能带论-半导体: SSP/5.md
+    - 第四章(1)：能带论-金属: SSP/4_1.md
+    - 第四章(2)：能带论-半导体: SSP/4_2.md
+    - 第五章：Bloch 电子的动力学性质: SSP/5.md
     - 物理概念: SSP/物理概念.md
     - 考试: SSP/0.md
   - Thermodynamics and Statistical Physics:
