@@ -178,7 +178,6 @@ nav:
     - 第六章 近独立粒子的最概然分布: TSP/6.md
     - 第七章 玻尔兹曼统计: TSP/7.md
     - 第八章 玻色统计和费米统计（简并气体）: TSP/8.md
-
   - Modern Physics Experiments:
     - 𝛾 辐射能量: MPE/辐射能量.md
     - 冉绍尔效应: MPE/冉绍尔效应.md
@@ -186,6 +185,7 @@ nav:
     - 霍尔效应: MPE/霍尔效应.md
     - 纳米颗粒: MPE/纳米颗粒.md
     - 铁电测量: MPE/铁电测量.md
+    - jgsx: MPE/jgsx.md
   - DXW:
     - 服务器操作笔记: DXW/server.md
     - Llama Factory llama3微调: DXW/LlamaFactory.md
