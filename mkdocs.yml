@@ -187,12 +187,18 @@ nav:
     - 铁电测量: MPE/铁电测量.md
     - jgsx: MPE/jgsx.md
   - DXW:
+    - 序言: DXW/index.md
     - 服务器操作笔记: DXW/server.md
     - Llama Factory llama3微调: DXW/LlamaFactory.md
     - 单专家模型: DXW/single.md
     - 传统GNN方法: DXW/GNN.md
-  - Valorant:
-    - 日落之城: Valorant/Sunset.md
-    - 森寒冬港: Valorant/Icebox.md
-    - 亚海悬城: Valorant/Ascent.md
+  - 其他:
+    - Valorant:
+      - 序言: Valorant/index.md
+      - 日落之城: Valorant/Sunset.md
+      - 森寒冬港: Valorant/Icebox.md
+      - 亚海悬城: Valorant/Ascent.md
+    - Exercise:
+      - 序言: Exercise/index.md    
+      - 胸: Exercise/1.md
 
