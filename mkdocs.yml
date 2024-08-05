@@ -103,7 +103,7 @@ markdown_extensions:
   - pymdownx.tilde
 
 extra_javascript:
-  # 渲染公式用的
+  # 渲染公式用的4个工具。注意：一定要联网，不然会乱码
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js
   - https://cdn.tonycrane.cc/utils/katex.min.js
@@ -111,7 +111,7 @@ extra_javascript:
 
 extra_css:
   - stylesheets/extra.css # 字体
-  - stylesheets/custom.css
+  - stylesheets/custom.css # 格式排版
   - css/tasklist.css
   - css/custom.css
   - css/card.css
@@ -128,7 +128,7 @@ extra:
 # Page-Tree
 nav:
   - Index: index.md
-  - Classical Physics:
+  - CPhysics:
     - Dynamics: classical physics/Dynamics.md
     - 物理模型: classical physics/物理模型.md
   - SF:
@@ -148,7 +148,7 @@ nav:
     - 第十四章 曲线积分 曲面积分 场论: SF/14.md
     - 第十五章 含参变量积分: SF/15.md
     - 第十六章 Fourier级数: SF/16.md
-  - Quantumn Mechanics:
+  - QM:
     - 1 波粒二象性 量子力学的基石: quantumn/1.md
     - 2 波函数: quantumn/2.md
     - 3 薛定谔方程 一维定态问题: quantumn/3.md
@@ -159,7 +159,7 @@ nav:
     - 8 散射: quantumn/8.md
     - 9 绝热近似: quantumn/9.md
     - Summary: quantumn/summary.md
-  - Solid State Physics:
+  - SSP:
     - 序言: SSP/index.md
     - 第一章(1)：晶体的结构: SSP/1_1.md
     - 第一章(2)：晶体的对称性: SSP/1_2.md
@@ -170,7 +170,7 @@ nav:
     - 第五章：Bloch 电子的动力学性质: SSP/5.md
     - 物理概念: SSP/物理概念.md
     - 考试: SSP/0.md
-  - Thermodynamics and Statistical Physics:
+  - TSP:
     - 序言: TSP/index.md
     - 第一章：热力学的基本规律: TSP/1.md
     - 第二章：均匀物质的热力学性质: TSP/2.md
@@ -178,7 +178,7 @@ nav:
     - 第六章 近独立粒子的最概然分布: TSP/6.md
     - 第七章 玻尔兹曼统计: TSP/7.md
     - 第八章 玻色统计和费米统计（简并气体）: TSP/8.md
-  - Modern Physics Experiments:
+  - MPE:
     - 𝛾 辐射能量: MPE/辐射能量.md
     - 冉绍尔效应: MPE/冉绍尔效应.md
     - X荧光分析: MPE/X荧光分析.md
@@ -192,6 +192,28 @@ nav:
     - Llama Factory llama3微调: DXW/LlamaFactory.md
     - 单专家模型: DXW/single.md
     - 传统GNN方法: DXW/GNN.md
+  - 25考研:
+    - 序言: 25考研/index.md
+    - 信息:
+      - 序言: 25考研/信息/index.md
+    - 英语:
+      - 序言: 25考研/英语/index.md
+      - 单词: 25考研/英语/单词.md
+      - 方法论: 
+        - 序言: 25考研/英语/方法论/index.md
+        - 阅读: 25考研/英语/方法论/阅读.md
+        - 写作: 25考研/英语/方法论/写作.md
+        - 翻译: 25考研/英语/方法论/翻译.md
+      - 诊断: 25考研/英语/诊断.md
+      - 刷题: 25考研/英语/刷题.md
+    - 政治:
+      - 序言: 25考研/政治/index.md
+      - 选择题: 25考研/政治/选择题.md
+      - 材料题: 25考研/政治/材料题.md
+      - 六大科目-知识点: 
+        - 马原: 
+          - 导论: 25考研/政治/六大科目-知识点/马原/0.md
+          - 第一章: 25考研/政治/六大科目-知识点/马原/1.md
   - 其他:
     - Valorant:
       - 序言: Valorant/index.md
