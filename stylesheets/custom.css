@@ -38,3 +38,6 @@ h3::after, h4::after, h5::after, h6::after {
     height: 0.1em;
 }
   
+p r {
+  color: red;
+}
