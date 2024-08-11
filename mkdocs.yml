@@ -120,10 +120,12 @@ extra_css:
 
 extra:
   fonts:
+    - name: times
+      url: fonts/TIMES.TTF # 英文
     - name: simfang
-      url: fonts/simfang.ttf
-    - name: CustomFont
-      url: fonts/HGFS_CNKI.TTF
+      url: fonts/simfang.ttf # 中文字体
+    # - name: CustomFont
+    #   url: fonts/HGFS_CNKI.TTF
 
 # Page-Tree
 nav:
@@ -199,6 +201,12 @@ nav:
     - 英语:
       - 序言: 25考研/英语/index.md
       - 单词: 25考研/英语/单词.md
+      - 单词表: 
+        - Unit1: 25考研/英语/单词表/U1.md
+        - Unit2: 25考研/英语/单词表/U2.md
+        - Unit3: 25考研/英语/单词表/U3.md
+        - Unit4: 25考研/英语/单词表/U4.md
+        - Unit5: 25考研/英语/单词表/U5.md
       - 方法论: 
         - 序言: 25考研/英语/方法论/index.md
         - 阅读: 25考研/英语/方法论/阅读.md
@@ -214,6 +222,8 @@ nav:
         - 马原: 
           - 导论: 25考研/政治/六大科目-知识点/马原/0.md
           - 第一章: 25考研/政治/六大科目-知识点/马原/1.md
+          - 第二章: 25考研/政治/六大科目-知识点/马原/2.md
+          - 第三章: 25考研/政治/六大科目-知识点/马原/3.md
   - 其他:
     - Valorant:
       - 序言: Valorant/index.md
