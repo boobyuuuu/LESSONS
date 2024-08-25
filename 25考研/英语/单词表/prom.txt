@@ -1,0 +1,121 @@
+我需要对一个以HTML格式书写的单词表进行填充，我给你内容，你帮我填充。HTML样式如下：
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordlist</title>
+    <style>
+        body {
+            font-size: 12px;
+            margin: 0;
+            padding: 0;
+        }
+        table {
+            width: 100%;
+            max-width: 210mm;
+            border-collapse: collapse;
+        }
+        td {
+            border: 1px solid black;
+            padding: 1px;
+            font-size: 8px;
+        }
+        th {
+            vertical-align: middle;
+            text-align: center;
+        }
+        .title-row td {
+            background-color: white;
+            font-size: 18pt;
+            font-weight: bold;
+            height: 20mm;
+            text-align: center;
+            vertical-align: middle;
+        }
+        h1 {
+            text-align: center;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr class="title-row">
+            <td colspan="10" style="background-color: #dcc9fd;text-align: center; vertical-align: middle;"></td>
+        </tr>
+        <tr style='height:5mm'>
+            <td rowspan=3 height=5 style="height:5mm;background-color: #dcc9fd;text-align: center; vertical-align: middle;font-weight: bold;">序号</td>
+            <td rowspan=3 height=5 style="height:5mm;width: 40mm; background-color: #cce5ff; text-align: center; vertical-align: middle;font-weight: bold;">知识</td>
+            <td rowspan=3 height=5 style="height:5mm;width: 80mm;background-color: #cce5ff;text-align: center; vertical-align: middle;font-weight: bold;">解释</td>
+            <td colspan=7 style="height:2mm;width: 60mm;background-color: #c4efc5;text-align: center;font-weight: bold;">背诵时间</td>
+        </tr>
+        <tr style="height:2mm;background-color: #c4efc5;">
+            <td>T</td>
+            <td>1</td>
+            <td>1</td>
+            <td>2</td>
+            <td>6</td>
+            <td>4</td>
+            <td>3</td>
+        </tr>
+        <tr style="height:1mm;background-color: #c4efc5;">
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+    <tbody>
+
+    </tbody>
+</table>
+</body>
+</html>
+
+
+1.只需要填充<tbody></tbody>之内的部分，并且也只给我这一部分的的内容。以下是一个填充示例：
+<tr style='height:20pt'>
+            <td>1</td>
+            <td>affirm</td>
+            <td>v.确定属实</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr style='height:20pt'>
+            <td>2</td>
+            <td>affirmative</td>
+            <td>a.肯定的，积极的</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+2.第一列是单词序号，从1开始排序；将单词填到第二列，释义填到第三列，自动补充第一列的序号，第四列的内容不需要填充。
+
+3.遇到以 - 或者 = 连接的一组单词，比如 'involve - evolve - revolve  进化 '，'staff = faculty 员工'，请不要将这组词汇分开，我需要一起背诵。`例如：
+<tr style='height:20pt'>
+    <td>1</td>
+    <td>contemptuous = scornful</td>
+    <td>鄙视的</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+</tr>
+
+如果你准备就绪， 我会输入我的单词笔记，请你将其合理的填充到单词表当中。
