@@ -526,6 +526,66 @@ A brief history of particle physics
 
         ![alt text](image-47.png)
 
+## Lecture 04 自然单位制
+
+## Lecture 05 相对论
+
+1. 洛伦兹变换
+
+    - 时空描述
+
+        ![alt text](image-51.png)
+
+    - 时空不变性
+
+        ![alt text](image-50.png)
+
+    - 洛伦兹变换
+
+        ![alt text](image-52.png)
+
+    - 自然单位制 矩阵形式
+
+        ![alt text](image-53.png)
+
+    - 洛伦兹逆变换
+
+        ![alt text](image-54.png)
+
+2. 四矢量（一般形式理论）
+
+    - 逆变四矢量
+
+    - 协变四矢量
+
+    - 宇称变换
+
+    - 标量积守恒量
+
+    - 洛伦兹矢量
+
+        ![alt text](image-55.png)
+
+    - 洛伦兹标量
+
+        ![alt text](image-56.png)
+
+    - 四维动量
+
+    - 根据标量乘积：类时、类空、类光矢量
+
+    - 质量不变量
+
+    - Mandelstam Variables
+
+    - 粒子对撞
+
+## Lecture 06 量子力学
+
+
+
+
+
 
 ## 问题
 
@@ -546,3 +606,7 @@ A brief history of particle physics
     这个搞懂
 
 6. 什么时候物理，什么时候非物理
+
+7. 衰变速率/例子寿命图的解释：质量差越大，衰变越快的理论失效？
+
+8. 是否有所有重子的衰变费曼图、寿命表，进行学习
