@@ -583,6 +583,155 @@ A brief history of particle physics
 ## Lecture 06 量子力学
 
 
+## Lecture 07 粒子性质
+
+1. 量子数总论
+
+    ![alt text](image-57.png)
+
+2. 量子数具体1：Mass
+
+    - 相对论中的质量
+
+        $$m^2=E^2-p^2$$
+
+    - 量子力学中的质量
+
+        $$i\hbar\frac\partial{\partial t}\psi(\mathbf{x},t)=\Big(-\frac{\hbar^2}{2m}\nabla^2+V(\mathbf{x})\Big)\psi(\mathbf{x},t)$$
+
+    - 相对性Dirac方程中的质量
+
+        $$(-i\gamma^\mu\partial_\mu+m)\psi(x)=0$$
+
+    - 标准模型中的质量：Higgs场中的耦合
+
+        $$G_\psi\overline{\psi}\psi H$$
+
+    - 稳定粒子质量与不稳定粒子质量的表示
+
+        ![alt text](image-58.png)
+
+2. 量子数具体2：Spin
+
+    - 粒子自旋态与粒子态的描述
+
+        ![alt text](image-59.png)
+
+        （J = L + S）
+
+3. 交换算符与全同粒子
+
+    - 交换算符与费米子、玻色子（单粒子态）
+
+        ![alt text](image-60.png)
+
+    - 全同粒子的交换算符（双粒子态）
+
+        ![alt text](image-61.png)
+
+        ![alt text](image-62.png)
+
+4. 其他量子数
+
+    - 螺旋度：Helicity
+
+        ![alt text](image-63.png)
+
+    - 电荷：Electric Charge
+
+    - 同位旋：Isospin
+
+        同位旋计算题：
+
+        ![alt text](image-64.png)
+
+    - 夸克味道：quark flavors
+
+    - 奇偶性：parity inversion
+
+## Lecture 08 对称性
+
+1. classificatuion of symmetries
+
+    ![alt text](image-65.png)
+
+    变换与量子数
+
+    ![alt text](image-66.png)
+
+2. 对称性与守恒定律
+
+    - 连续变换
+    
+        对称性 -> 对称算符的生成源算符有守恒性
+
+    - 分立变换
+
+        对称算符自身是守恒量
+
+    > 可以证明。关键：厄米算符
+
+## Lecture 09 群论基础
+
+1. 群的基本性质
+
+    - 封闭性
+
+    - 单位元素
+
+    - 逆元素
+
+    - $a(bc) = (ab)c$
+
+2. U(n)群和SU(n)群
+
+    - 定义与性质
+
+    - 应用
+
+        ![alt text](image-67.png)
+
+3. 群的矩阵表示
+
+    - trivial rep and fundamental rep
+
+    - SU(2)
+
+    - SU(3)
+
+## Lecture 10 夸克模型
+
+1. 双味道模型：只考虑 u,d 夸克
+
+    - 对称性
+
+    - 自旋三重态
+
+    - 重子
+
+2. 三味道模型：只考虑 u,d 夸克
+
+    - 8重态
+
+    - 重子
+
+    - 波函数
+
+3. u,d夸克介子
+
+4. 考虑 u,d,s 夸克模型
+
+    - 矩阵表示
+
+    - 介子构造
+
+    - 重子构造
+
+
+
+
+
+
 
 
 
