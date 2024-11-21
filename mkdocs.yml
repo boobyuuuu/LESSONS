@@ -156,8 +156,9 @@ nav:
     - 第十六章 Fourier级数: SF/16.md
   - QM:
     - 0 原子物理: quantumn/0.md
-    - 1 基本假设 数学工具 形式理论: quantumn/4.md
-    - 2 一维定态问题: quantumn/3.md
+    - 1 基本假设 数学工具 形式理论(1): quantumn/4_1.md
+    - 2 基本假设 数学工具 形式理论(2): quantumn/4_2.md
+    - 3 一维定态问题: quantumn/3.md
     - 5 五大基本应用: quantumn/5.md
     - 6 微扰: quantumn/6.md
     - 7 变分法: quantumn/7.md
