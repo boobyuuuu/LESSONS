@@ -47,6 +47,7 @@ theme:
 
 # 搜索用的插件
 plugins:
+  # - include-markdown
   - blog
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
@@ -56,6 +57,8 @@ plugins:
 
 # Markdown Extensions
 markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
   - abbr
   - admonition
   - attr_list
@@ -64,55 +67,60 @@ markdown_extensions:
   - md_in_html
   - toc:
       permalink: true
-  - pymdownx.arithmatex:
-      generic: true
-  - pymdownx.betterem:
-      smart_enable: all
-  - pymdownx.caret
-  - pymdownx.details
-  - pymdownx.emoji:
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-  - pymdownx.highlight:
-      anchor_linenums: true
-      line_spans: __span
-      pygments_lang_class: true
-  - pymdownx.inlinehilite
-  - pymdownx.keys
-  - pymdownx.magiclink:
-      normalize_issue_symbols: true
-      repo_url_shorthand: true
-      user: squidfunk
-      repo: mkdocs-material
-  - pymdownx.mark
-  - pymdownx.smartsymbols
-  - pymdownx.snippets:
-      auto_append:
-        - includes/mkdocs.md
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
-  - pymdownx.tabbed:
-      alternate_style: true
-      combine_header_slug: true
-      slugify: !!python/object/apply:pymdownx.slugs.slugify
-        kwds:
-          case: lower
-  - pymdownx.tasklist:
-      custom_checkbox: true
-  - pymdownx.tilde
+  # - pymdownx.betterem:
+  #     smart_enable: all
+  # - pymdownx.caret
+  # - pymdownx.details
+  # - pymdownx.emoji:
+  #     emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  #     emoji_index: !!python/name:material.extensions.emoji.twemoji
+  # - pymdownx.highlight:
+  #     anchor_linenums: true
+  #     line_spans: __span
+  #     pygments_lang_class: true
+  # - pymdownx.inlinehilite
+  # - pymdownx.keys
+  # - pymdownx.magiclink:
+  #     normalize_issue_symbols: true
+  #     repo_url_shorthand: true
+  #     user: squidfunk
+  #     repo: mkdocs-material
+  # - pymdownx.mark
+  # - pymdownx.smartsymbols
+  # - pymdownx.snippets:
+  #     auto_append:
+  #       - includes/mkdocs.md
+  # - pymdownx.superfences:
+  #     custom_fences:
+  #       - name: mermaid
+  #         class: mermaid
+  #         format: !!python/name:pymdownx.superfences.fence_code_format
+  # - pymdownx.tabbed:
+  #     alternate_style: true
+  #     combine_header_slug: true
+  #     slugify: !!python/object/apply:pymdownx.slugs.slugify
+  #       kwds:
+  #         case: lower
+  # - pymdownx.tasklist:
+  #     custom_checkbox: true
+  # - pymdownx.tilde
 
 extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+  # - javascripts/katex.js
+  # - https://unpkg.com/katex@0/dist/katex.min.js
+  # - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
   # 渲染公式用的4个工具。注意：一定要联网，不然会乱码
-  - https://polyfill.io/v3/polyfill.min.js?features=es6
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js
-  - https://cdn.tonycrane.cc/utils/katex.min.js
-  - js/katex.js
+  # - https://polyfill.io/v3/polyfill.min.js?features=es6
+  # - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js
+  # - https://cdn.tonycrane.cc/utils/katex.min.js
+  # - js/katex.js
 
 # 拓展自定义css模板
 extra_css:
+  # - https://unpkg.com/katex@0/dist/katex.min.css
   - stylesheets/extra.css # 字体
   - stylesheets/custom.css # 格式排版
   - css/tasklist.css
@@ -165,6 +173,42 @@ nav:
     - 8 散射: quantumn/8.md
     - 9 绝热近似: quantumn/9.md
     - Summary: quantumn/summary.md
+  - QFT:
+    - 1: QFT\(20240909)量子场论第一讲真空粒子场产生和湮灭_Expansion\(20240909)量子场论第一讲真空粒子场产生和湮灭_Expansion.md
+    - 2:  QFT\(20240909)量子场论第二讲电场库仑定律和格林函数_Expansion\(20240909)量子场论第二讲电场库仑定律和格林函数_Expansion.md
+    - 3:  QFT\(20240913)量子场论第三讲谐振子拉氏量_Expansion\(20240913)量子场论第三讲谐振子拉氏量_Expansion.md
+    - 4:  QFT\(20240916)量子场论第四讲_对称性和守恒定律I_Expansion\(20240916)量子场论第四讲_对称性和守恒定律I_Expansion.md
+    - 5:  QFT\(20240918)量子场论第五讲对称性和守恒定律_II_Expansion\(20240918)量子场论第五讲对称性和守恒定律_II_Expansion.md
+    - 6:  QFT\(20240920)量子场论第六讲标量场场量子化_Expansion\(20240920)量子场论第六讲标量场场量子化_Expansion.md
+    - 7:  QFT\(20240921)量子场论第七讲单粒子态因果律反粒子_Expansion\(20240921)量子场论第七讲单粒子态因果律反粒子_Expansion.md
+    - 8:  QFT\(20240925)量子场论第八讲无穷远无穷未来传播子_Expansion\(20240925)量子场论第八讲无穷远无穷未来传播子_Expansion.md
+    - 9:  QFT\(20240926)量子场论第九讲电磁场及其量子化_Expansion\(20240926)量子场论第九讲电磁场及其量子化_Expansion.md
+    - 9:  QFT\(20241210)量子场论第9讲无质量粒子的螺旋度_Expansion\(20241210)量子场论第9讲无质量粒子的螺旋度_Expansion.md
+    - 10:  QFT\(20240928)量子场论第十讲_表象相互作用真空_Expansion\(20240928)量子场论第十讲_表象相互作用真空_Expansion.md
+    - 11:  QFT\(20241008)量子场论第11讲S矩阵和时间演化算符_Expansion\(20241008)量子场论第11讲S矩阵和时间演化算符_Expansion.md
+    - 12:  QFT\(20240929)量子场论第12讲Wick定理真空泡沫_Expansion\(20240929)量子场论第12讲Wick定理真空泡沫_Expansion.md
+    - 13:  QFT\(20241010)量子场论第13讲散射截面衰变宽度_Expansion\(20241010)量子场论第13讲散射截面衰变宽度_Expansion.md
+    - 14:  QFT\(20241022)量子场论第14讲__截面计算和费曼规则I_Expansion\(20241022)量子场论第14讲__截面计算和费曼规则I_Expansion.md
+    - 15:  QFT\(20241026)量子场论第15讲_Dirac方程和Majorana方程_Expansion\(20241026)量子场论第15讲_Dirac方程和Majorana方程_Expansion.md
+    - 16:  QFT\(20241106)量子场论第16讲Dirac方程的解和量子化_Expansion\(20241106)量子场论第16讲Dirac方程的解和量子化_Expansion.md
+    - 16:  QFT\(20241111)量子场论第16讲Helicity和Chirality_Expansion\(20241111)量子场论第16讲Helicity和Chirality_Expansion.md
+    - 16:  QFT\(20241111)量子场论第16讲反粒子自旋小议_Expansion\(20241111)量子场论第16讲反粒子自旋小议_Expansion.md
+    - 17:  QFT\(20241112)量子场论第17讲吸引力和排斥力_Expansion\(20241112)量子场论第17讲吸引力和排斥力_Expansion.md
+    - 17:  QFT\(20241120)量子场论第17讲QED_色自由度的测量_Expansion\(20241120)量子场论第17讲QED_色自由度的测量_Expansion.md
+    - 18:  QFT\(20241117)量子场论第18讲标量场-路径积分量子化_Expansion\(20241117)量子场论第18讲标量场-路径积分量子化_Expansion.md
+    - 19:  QFT\(20241128)量子场论第19讲光子传播子规范固定鬼场_Expansion\(20241128)量子场论第19讲光子传播子规范固定鬼场_Expansion.md
+    - 20:  QFT\(20241127)量子场论第20讲费曼规则S矩阵_Expansion\(20241127)量子场论第20讲费曼规则S矩阵_Expansion.md
+    - 21:  QFT\(20241129)量子场论第21讲Dirac场路径积分量子化_Expansion\(20241129)量子场论第21讲Dirac场路径积分量子化_Expansion.md
+    - 21:  QFT\(20241214)量子场论第21讲Ward-Takahashi恒等式_Expansion\(20241214)量子场论第21讲Ward-Takahashi恒等式_Expansion.md
+    - 22:  QFT\(20241202)量子场论第22讲几个不神奇的树图计算实例1_Expansion\(20241202)量子场论第22讲几个不神奇的树图计算实例1_Expansion.md
+    - 23:  QFT\(20241203)量子场论第23讲几个不神奇的树图计算实例2_Expansion\(20241203)量子场论第23讲几个不神奇的树图计算实例2_Expansion.md
+    - 24:  QFT\(20241203)量子场论第24讲几个不神奇的树图计算实例3_Expansion\(20241203)量子场论第24讲几个不神奇的树图计算实例3_Expansion.md
+    - 25:  QFT\(20241208)量子场论第25讲正规化_Expansion\(20241208)量子场论第25讲正规化_Expansion.md
+    - 26:  QFT\(20241210)量子场论第26讲跑动耦合常数-phi4_Expansion\(20241210)量子场论第26讲跑动耦合常数-phi4_Expansion.md
+    - 27:  QFT\(20241213)量子场论第27讲跑动耦合常数-QED_Expansion\(20241213)量子场论第27讲跑动耦合常数-QED_Expansion.md
+    - 28:  QFT\(20241218)量子场论第28讲质量重整化-QED_Expansion\(20241218)量子场论第28讲质量重整化-QED_Expansion.md
+    - 29:  QFT\(20241217)量子场论第29讲电子反常磁矩I_Expansion\(20241217)量子场论第29讲电子反常磁矩I_Expansion.md
+    - 30:  QFT\(20241220)量子场论第30讲电子反常磁矩II_Expansion\(20241220)量子场论第30讲电子反常磁矩II_Expansion.md
   - SSP:
     - 序言: SSP/index.md
     - 第一章(1)：晶体的结构: SSP/1_1.md
@@ -337,5 +381,7 @@ nav:
       - 蜗牛: piano/蜗牛.md
     - 大四:
       - practicle physics: 大四/粒子物理/particle physics.md
+    - secret: 
+      - secret: secret/secret.md
 
 
