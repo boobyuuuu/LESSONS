@@ -1,7 +1,6 @@
 # 2025年1月任务表
 
 <style>
-  /* 1 整体风格 */
   body {
     background: url('https://cdn.pixabay.com/photo/2022/06/13/12/19/sea-7259914_1280.jpg');
     background-size: cover;
@@ -72,7 +71,6 @@
   tr:hover {
     background-color: #ddd;
   }
-  /* 2 注释 */
   .comment-input, .progress-input, .rating-input {
     width: 100%;
     padding: 8px;
@@ -99,7 +97,6 @@
     max-width: 300px;
     font-family: 'xiaokai', sans-serif;
   }
-  /* 3 进度 */
   .progress-bar-container {
     width: 100%;
     background-color: #f6f6f6;
@@ -107,6 +104,7 @@
     overflow: hidden;
     height: 10px;
     margin-top: 5px;
+    cursor: pointer; /* Add cursor change */
   }
   .progress-bar {
     height: 100%;
@@ -115,7 +113,6 @@
     transition: width 0.3s;
     border-radius: 10px;
   }
-  /* 4 日历 */
   .calendar {
     display: none;
     position: absolute;
@@ -193,7 +190,7 @@
 </style>
 
 <script>
-document.addEventListener("DOMContentLoaded", function() {
+  document.addEventListener("DOMContentLoaded", function() {
     const commentInputs = document.querySelectorAll(".comment-input");
     const progressInputs = document.querySelectorAll(".progress-input");
     const ratingInputs = document.querySelectorAll(".rating-input");
@@ -207,7 +204,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // 恢复勾选框的状态
     checkboxes.forEach((checkbox, index) => {
-      const savedChecked = localStorage.getItem(`checkbox-${index}`);
+      const savedChecked = localStorage.getItem(checkbox-${index});
       if (savedChecked === "true") {
         checkbox.checked = true;
       } else {
@@ -215,7 +212,7 @@ document.addEventListener("DOMContentLoaded", function() {
       }
 
       checkbox.addEventListener("change", () => {
-        localStorage.setItem(`checkbox-${index}`, checkbox.checked);
+        localStorage.setItem(checkbox-${index}, checkbox.checked);
       });
     });
 
@@ -233,51 +230,46 @@ document.addEventListener("DOMContentLoaded", function() {
       tooltip.style.display = "none";
     }
 
-    // 处理注释
     commentInputs.forEach((input, index) => {
-      const savedValue = localStorage.getItem(`comment-${index}`);
+      const savedValue = localStorage.getItem(comment-${index});
       if (savedValue) {
         input.value = savedValue;
       }
       input.addEventListener("input", () => {
-        localStorage.setItem(`comment-${index}`, input.value);
+        localStorage.setItem(comment-${index}, input.value);
       });
       input.addEventListener("mouseover", (event) => handleMouseOver(event, input));
       input.addEventListener("mouseout", handleMouseOut);
     });
 
-    // 处理进度
     progressInputs.forEach((input, index) => {
-      const savedValue = localStorage.getItem(`progress-${index}`);
+      const savedValue = localStorage.getItem(progress-${index});
       if (savedValue) {
         input.value = savedValue;
         progressBars[index].style.width = savedValue + "%";
       }
       input.addEventListener("input", () => {
         const value = input.value;
-        localStorage.setItem(`progress-${index}`, value);
+        localStorage.setItem(progress-${index}, value);
         progressBars[index].style.width = value + "%";
       });
     });
 
-    // 处理评级
     ratingInputs.forEach((input, index) => {
-      const savedValue = localStorage.getItem(`rating-${index}`);
+      const savedValue = localStorage.getItem(rating-${index});
       if (savedValue) {
         input.value = savedValue;
       }
       input.addEventListener("input", () => {
-        localStorage.setItem(`rating-${index}`, input.value);
+        localStorage.setItem(rating-${index}, input.value);
       });
       input.addEventListener("mouseover", (event) => handleMouseOver(event, input));
       input.addEventListener("mouseout", handleMouseOut);
     });
 
-    // 处理进度条
     progressBars.forEach((progressBar, index) => {
       progressBar.addEventListener("click", (event) => {
         const calendar = calendars[index];
-        generateCalendar(calendar, index);
         calendar.style.display = "block";
         calendar.style.left = event.pageX + "px";
         calendar.style.top = event.pageY + "px";
@@ -293,60 +285,99 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     });
 
-    // 处理日历
-    function generateCalendar(calendarElement, index) {
-      const now = new Date();
-      const year = now.getFullYear();
-      const month = now.getMonth();
-      const firstDay = new Date(year, month, 1).getDay();
-      const daysInMonth = new Date(year, month + 1, 0).getDate();
-
-      let calendarHTML = '<table><thead><tr>';
-      const daysOfWeek = ['日', '一', '二', '三', '四', '五', '六'];
-      daysOfWeek.forEach(day => {
-        calendarHTML += `<th>${day}</th>`;
-      });
-      calendarHTML += '</tr></thead><tbody><tr>';
-
-      for (let i = 0; i < firstDay; i++) {
-        calendarHTML += '<td></td>';
-      }
-
-      for (let day = 1; day <= daysInMonth; day++) {
-        if ((firstDay + day - 1) % 7 === 0) {
-          calendarHTML += '</tr><tr>';
-        }
-        calendarHTML += `<td class="calendar-day">${day}</td>`;
-      }
-
-      calendarHTML += '</tr></tbody></table>';
-      calendarElement.innerHTML = calendarHTML;
-
-      const days = calendarElement.querySelectorAll(".calendar-day");
+    calendars.forEach((calendar, index) => {
+      const days = calendar.querySelectorAll("td");
       days.forEach(day => {
         day.addEventListener("click", () => {
           day.classList.toggle("completed");
-          saveCompletedDays(index, days);
+          const completedDays = Array.from(days).filter(d => d.classList.contains("completed")).map(d => d.textContent);
+          localStorage.setItem(completedDays-${index}, JSON.stringify(completedDays));
         });
       });
 
-      loadCompletedDays(index, days);
-    }
-
-    function saveCompletedDays(index, days) {
-      const completedDays = Array.from(days).filter(d => d.classList.contains("completed")).map(d => d.textContent);
-      localStorage.setItem(`completedDays-${index}`, JSON.stringify(completedDays));
-    }
-
-    function loadCompletedDays(index, days) {
-      const savedCompletedDays = JSON.parse(localStorage.getItem(`completedDays-${index}`) || "[]");
+      const savedCompletedDays = JSON.parse(localStorage.getItem(completedDays-${index}) || "[]");
       savedCompletedDays.forEach(day => {
         const dayElement = Array.from(days).find(d => d.textContent === day);
         if (dayElement) {
           dayElement.classList.add("completed");
         }
       });
+    });
+
+    calendarInputs.forEach((input, index) => {
+      const savedValue = localStorage.getItem(calendar-input-${index});
+      if (savedValue) {
+        input.value = savedValue;
+        const commentBox = input.nextElementSibling;
+        commentBox.textContent = savedValue;
+        commentBox.style.display = "inline-block";
+      }
+      input.addEventListener("input", () => {
+        const value = input.value;
+        localStorage.setItem(calendar-input-${index}, value);
+        const commentBox = input.nextElementSibling;
+        commentBox.textContent = value;
+        commentBox.style.display = value ? "inline-block" : "none";
+      });
+      input.addEventListener("mouseover", (event) => handleMouseOver(event, input));
+      input.addEventListener("mouseout", handleMouseOut);
+    });
+
+    document.querySelectorAll(".calendar-comment").forEach((commentBox, index) => {
+      commentBox.addEventListener("mouseover", (event) => {
+        const input = document.querySelector(.calendar-input[data-day="${commentBox.dataset.day}"]);
+        handleMouseOver(event, input);
+      });
+      commentBox.addEventListener("mouseout", handleMouseOut);
+    });
+
+    function generateCalendar() {
+      const date = new Date();
+      const year = date.getFullYear();
+      const month = date.getMonth();
+      const daysInMonth = new Date(year, month + 1, 0).getDate();
+      let calendarHTML = "<table><tr>";
+      const daysOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+      daysOfWeek.forEach(day => {
+        calendarHTML += <th>${day}</th>;
+      });
+      calendarHTML += "</tr><tr>";
+      const firstDay = new Date(year, month, 1).getDay();
+      for (let i = 0; i < firstDay; i++) {
+        calendarHTML += "<td></td>";
+      }
+      for (let day = 1; day <= daysInMonth; day++) {
+        if ((firstDay + day - 1) % 7 === 0) {
+          calendarHTML += "</tr><tr>";
+        }
+        calendarHTML += <td class="calendar-day"><span class="calendar-date">${day}</span><input type="text" class="calendar-input" placeholder="添加注释" size="10" data-day="${day}"><span class="calendar-comment" data-day="${day}"></span></td>;
+      }
+      calendarHTML += "</tr></table>";
+      return calendarHTML;
     }
+
+    calendars.forEach(calendar => {
+      calendar.innerHTML = generateCalendar();
+    });
+
+    calendars.forEach((calendar, index) => {
+      const days = calendar.querySelectorAll("td");
+      days.forEach(day => {
+        day.addEventListener("click", () => {
+          day.classList.toggle("completed");
+          const completedDays = Array.from(days).filter(d => d.classList.contains("completed")).map(d => d.textContent);
+          localStorage.setItem(completedDays-${index}, JSON.stringify(completedDays));
+        });
+      });
+
+      const savedCompletedDays = JSON.parse(localStorage.getItem(completedDays-${index}) || "[]");
+      savedCompletedDays.forEach(day => {
+        const dayElement = Array.from(days).find(d => d.textContent === day);
+        if (dayElement) {
+          dayElement.classList.add("completed");
+        }
+      });
+    });
   });
 </script>
 
