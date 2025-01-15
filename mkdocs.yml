@@ -143,6 +143,7 @@ extra:
 nav:
   - Index: index.md
   - TimeTable: 
+    - 日记: TimeTable/diary.md
     - 2025年1月: TimeTable/25_1.md
   - CPhysics:
     - Dynamics: classical physics/Dynamics.md
