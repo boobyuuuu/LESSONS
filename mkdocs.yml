@@ -145,6 +145,7 @@ nav:
   - TimeTable: 
     - 日记: TimeTable/diary.md
     - 2025年1月: TimeTable/25_1.md
+    - 钱包: TimeTable/wallet.md
   - CPhysics:
     - Dynamics: classical physics/Dynamics.md
     - 物理模型: classical physics/物理模型.md
