@@ -1,3 +1,5 @@
+site_url: https://boobyuuuu.github.io/LESSONS/
+repo_url: https://github.com/boobyuuuu/LESSONS
 site_name: BLOG of LZH
 site_description: >-
   祈祷明天对你来说，也是美好的一天。
@@ -47,18 +49,11 @@ theme:
 
 # 搜索用的插件
 plugins:
-  # - include-markdown
-  - blog
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
-  - minify:
-      minify_html: true
-  # - with-pdf
 
 # Markdown Extensions
 markdown_extensions:
-  - pymdownx.arithmatex:
-      generic: true
   - abbr
   - admonition
   - attr_list
@@ -67,60 +62,55 @@ markdown_extensions:
   - md_in_html
   - toc:
       permalink: true
-  # - pymdownx.betterem:
-  #     smart_enable: all
-  # - pymdownx.caret
-  # - pymdownx.details
-  # - pymdownx.emoji:
-  #     emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  #     emoji_index: !!python/name:material.extensions.emoji.twemoji
-  # - pymdownx.highlight:
-  #     anchor_linenums: true
-  #     line_spans: __span
-  #     pygments_lang_class: true
-  # - pymdownx.inlinehilite
-  # - pymdownx.keys
-  # - pymdownx.magiclink:
-  #     normalize_issue_symbols: true
-  #     repo_url_shorthand: true
-  #     user: squidfunk
-  #     repo: mkdocs-material
-  # - pymdownx.mark
-  # - pymdownx.smartsymbols
-  # - pymdownx.snippets:
-  #     auto_append:
-  #       - includes/mkdocs.md
-  # - pymdownx.superfences:
-  #     custom_fences:
-  #       - name: mermaid
-  #         class: mermaid
-  #         format: !!python/name:pymdownx.superfences.fence_code_format
-  # - pymdownx.tabbed:
-  #     alternate_style: true
-  #     combine_header_slug: true
-  #     slugify: !!python/object/apply:pymdownx.slugs.slugify
-  #       kwds:
-  #         case: lower
-  # - pymdownx.tasklist:
-  #     custom_checkbox: true
-  # - pymdownx.tilde
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      normalize_issue_symbols: true
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      auto_append:
+        - includes/mkdocs.md
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
 
 extra_javascript:
-  - javascripts/mathjax.js
-  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
-
-  # - javascripts/katex.js
-  # - https://unpkg.com/katex@0/dist/katex.min.js
-  # - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
   # 渲染公式用的4个工具。注意：一定要联网，不然会乱码
-  # - https://polyfill.io/v3/polyfill.min.js?features=es6
-  # - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js
-  # - https://cdn.tonycrane.cc/utils/katex.min.js
-  # - js/katex.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js
+  - https://cdn.tonycrane.cc/utils/katex.min.js
+  - js/katex.js
 
 # 拓展自定义css模板
 extra_css:
-  # - https://unpkg.com/katex@0/dist/katex.min.css
   - stylesheets/extra.css # 字体
   - stylesheets/custom.css # 格式排版
   - css/tasklist.css
@@ -218,6 +208,7 @@ nav:
     - 终端: PC/terminal.md
     - 桌面: PC/desktop.md
     - 应用: PC/apps.md
+    - vscode: PC/vscode.md
   - 25考研:
     - 序言: 25考研/index.md
     - 信息:

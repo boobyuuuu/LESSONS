@@ -1,5 +1,7 @@
+# 个人钱包管理
+
 <style>
-  /* 基于calendar.md的主题风格 */
+  /* 1 整体风格 */
   body {
     background: url('https://cdn.pixabay.com/photo/2022/06/13/12/19/sea-7259914_1280.jpg');
     background-size: cover;
@@ -16,6 +18,15 @@
     padding: 20px;
     margin: 20px auto;
     max-width: 800px;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: normal !important;
+  }
+  h1::before, h1::after, h2::after, h3::after, h4::after, h5::after, h6::after {
+    content: none !important;
+  }
+  p r {
+    color: inherit !important;
   }
   h1 {
     font-weight: bold;
@@ -444,9 +455,8 @@
   }
 </script>
 
-<div class="container">
-  <h1>个人钱包管理器</h1>
 
+<div class="container">
   <div class="section-title">账户管理</div>
   <form id="account-form">
     <div class="form-group">
