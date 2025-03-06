@@ -135,6 +135,7 @@ nav:
   - TimeTable: 
     - 日记: TimeTable/diary.md
     - 2025年1月: TimeTable/25_1.md
+    - 2026年3月: TimeTable/26_3.md
     - 钱包: TimeTable/wallet.md
   - CPhysics:
     - Dynamics: classical physics/Dynamics.md
@@ -211,6 +212,11 @@ nav:
     - vscode: PC/vscode.md
   - 25考研:
     - 序言: 25考研/index.md
+    - 时间表:
+      - 序言: 25考研/时间/index.md
+      - 第一阶段: 25考研/时间/1.md
+      - 第二阶段: 25考研/时间/2.md
+      - 第三阶段: 25考研/时间/3.md
     - 信息:
       - 序言: 25考研/信息/index.md
     - 英语:
